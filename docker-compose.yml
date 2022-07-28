@@ -1,0 +1,11 @@
+version: '3.9'
+
+services:
+  app:
+    image: 'demo:latest'
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: demo
+    ports:
+      - '9090:8080'
